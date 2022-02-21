@@ -1,11 +1,11 @@
 # coating
 Study effect of coating
 
-Assuming you have three file MEA1.h5, MEA2.h5 and MEA3.h5, you can launch Spyking circus on all your files like that
+Assuming you have one file G4_MEA.h5 with 5 coating configurations, first you need to create the results files by running spyking-circus :
 
-> spyking-circus MEA1.h5
-> spyking-circus MEA1.h5 -m thresholing
+> spyking-circus G4_MEA.h5
+> spyking-circus G4_MEA.h5 -m thresholding
 
 You need to edit the .params first to be sure that [no_edits] filter_done is set to False, if you start with unfiltered data for the first time. 
 
-Once the data have been generated, the script.py will make the plots
+Once the data have been generated, run the script.py to make the plots
